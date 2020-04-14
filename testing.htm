@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="svgdiv"></div>
+<script language="javascript" src="graph.js">
+
+
+var x= new Array();		
+var y= new Array();	
+function graph()
+{
+	x=[10,20,30,40,55]; \\Data on X-axis
+	y=[5,50,30,70,80]; \\Data on Y-axis
+	drawGraph(x,y);
+}
+
+
+graph();
+</script>
+
+<svg height="150" width="150" style="">
+  <line x1="0" y1="0" x2="0" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+  <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+
+
+  <line x1="0" y1="0" x2="20" y2="50" style="stroke:rgb(255,0,0);stroke-width:2;cursor:hand"  />
+<line x1="20" y1="50" x2="30" y2="30" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+<line x1="30" y1="30" x2="40" y2="50" style="stroke:rgb(255,0,0);stroke-width:2" />
+</svg>
+
+
+</body>
+
+
+<style>
+
+
+svg {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
+}
+</style>
+
+<style>
+/* Tooltip container */
+.tooltip{
+	
+	stroke:rgb(255,0,0);
+	stdDeviation="10";
+}
+
+/* Tooltip text */
+#tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ opacity: 0;
+    transition: opacity 1s;
+    /* Position the tooltip text - see examples below! */
+   position : fixed;
+    z-index: 1;
+}
+
+
+</style>
+
+
+  <span id="tooltiptext">Tooltip text</span>
+
+</html>

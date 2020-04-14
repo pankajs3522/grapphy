@@ -1,0 +1,28 @@
+svg {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
+}
+
+/* Tooltip container */
+.tooltip{
+	
+	stroke:rgb(255,0,0);
+	stdDeviation="10";
+}
+
+/* Tooltip text */
+#ttx {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ opacity: 0;
+    transition: opacity 1s;
+    /* Position the tooltip text - see examples below! */
+   position : fixed;
+    z-index: 1;
+}
+
